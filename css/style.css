@@ -1,0 +1,38 @@
+
+.navbar-brand{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+
+}
+/* change navigation color */
+.navbar #mymenu .cms-nav-menu .nav-item a{
+    color: #fff;
+}
+.navbar #mymenu .cms-nav-menu .nav-item a:hover{
+    color: #f0aab1;
+}
+
+.cms-header-img{
+    min-height: 90vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 0;
+    margin-top: 50px;
+}
+/* header image sub title */
+.psize{
+    font-size: 24px;
+}
+/* header main div */
+.myclass{
+    margin-top: 100px;
+    margin-left: 50px;
+}
+@media only screen and (max-width:600px){
+    .myclass{
+    margin-top: 300px;
+    text-align: center;
+    }
+}
