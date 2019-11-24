@@ -1,4 +1,8 @@
 
+a:hover {
+  text-decoration: none;
+}
+
 .navbar-brand{
     font-family: 'Ubuntu', sans-serif;
     font-size: 2em;
@@ -10,7 +14,7 @@
     color: #fff;
 }
 .navbar #mymenu .cms-nav-menu .nav-item a:hover{
-    color: #f0aab1;
+    color:beige;
 }
 
 .cms-header-img{
@@ -29,6 +33,9 @@
 .myclass{
     margin-top: 100px;
     margin-left: 50px;
+}
+footer a{
+    color: beige;
 }
 @media only screen and (max-width:600px){
     .myclass{

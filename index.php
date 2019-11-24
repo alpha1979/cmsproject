@@ -26,26 +26,26 @@
             <div class="collapse navbar-collapse" id="mymenu">
                 <ul class="navbar-nav pl-5 cms-nav-menu">
                     <li class="nav-item"><a href="index.php" class="nav-link pl-5">Home</a></li>
-                    <li class="nav-item"><a href="index.php" class="nav-link pl-5">About</a></li>
-                    <li class="nav-item"><a href="index.php" class="nav-link pl-5">Services</a></li>
-                    <li class="nav-item"><a href="index.php" class="nav-link pl-5">Registration</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link pl-5">About</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link pl-5">Services</a></li>
+                    <li class="nav-item"><a href="#register" class="nav-link pl-5">Registration</a></li>
                     <li class="nav-item"><a href="index.php" class="nav-link pl-5">Login</a></li>
-                    <li class="nav-item"><a href="index.php" class="nav-link pl-5">Contact</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link pl-5">Contact</a></li>
                 </ul>
             </div>
         </nav>
     <!-- nav end -->
         <!-- start jumbotron -->
-        <header class="jumbotron cms-header-img" style="background-image:url(images/vision.jpg)">
+        <header class="jumbotron cms-header-img" style="background-image:url(images/cmsprojectmain.jpg)">
             <div class="myclass">
                 <h1 class="text-uppercase text-primary font-weight-bold">Welcome to CMS project site</h1>
                 <p class="font-italic psize">We are happy to provide excellent CMS site for you</p>
-                <a href="login.php" class="btn btn-success">Login</a>
+                <a href="login.php" class="btn btn-success mr-4">Login</a>
                 <a href="signup.php" class="btn btn-danger mr-4">Sign Up</a>
             </div>
         </header>
         <!-- start about us section -->
-        <div class="container">
+        <div class="container" id="about">
             <div class="jumbotron">
                 <h3 class="text-center">About</h3>
                 <p class="text-justify">
@@ -61,7 +61,7 @@
 
             </div>
         </div><!-- end about us section-->
-        <div class="container text-center border-bottom">
+        <div class="container text-center border-bottom" id="services">
             <h3>Our Services</h3>
             <div class="row mt-4">
                 <div class="col-sm-4">
@@ -80,38 +80,103 @@
         </div>
     <!-- End services section -->
     <!-- Start registration form -->
-        <div class="coinainter pt-5">
-            <h2 class="text-center">Register to make new account</h2>
-            <div class="row mt-4 mb-4">
-                <div class="col-md-4 offset-md-4">
-                    <form action="" class="shadow-lg p-4" method="POST">
-                        <div class="form-group">
-                            <i class="fas fa-user"></i>
-                            <label for="name" class="font-weight-bold pl-2">Name</label>
-                            <input type="text" class="form-control" name="rName" placeholder="Name">
-                        </div>
-                        <div class="form-group">
-                            <i class="fas fa-envelope"></i>
-                            <label for="email" class="font-weight-bold pl-2">Email</label>
-                            <input type="email" class="form-control" name="rEmail" placeholder="Email">
-                            <small class="form-text">We will never share you email with any one</small>
-                        </div>
-                        <div class="form-group">
-                            <i class="fas fa-key"></i>
-                            <label for="password" class="font-weight-bold pl-2">Password</label>
-                            <input type="password" class="form-control" name="rPass" placeholder="Password">
-                        </div>
-                        <button class="btn btn-danger mt-5 btn-block shadow-sm font-weight-bold" name="rSignup">Sign Up</button>
-                        <em style="font-size:10px">Note- By clicking sign up, you agree to our Terms , Data Policy and Cookie Ploicy</em>
-                    </form>
-                </div>
-            </div>
-
-
-
-        </div>
+     <?php include_once 'UserRegistration.php'; ?>
 
     <!-- end registration form -->
+    <!-- Start Customer Review -->
+        <div class="jumbotron bg-danger">
+            
+            <div class="container">
+            <h2 class="text-center text-white">Customer Review</h2>
+            <div class="row mt-5">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="card shadow-lg mb-2">
+                        <div class="card-body text-center">
+                        <img src="images/client1.jpg" alt="customer1" class="img-fluid" style="border-radius:100px">
+                        <h4 class="card-title">Customer 1</h4>
+                        <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis iusto cum deleniti, 
+                            officiis.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="card shadow-lg mb-2">
+                        <div class="card-body text-center">
+                        <img src="images/client2.jpg" alt="customer2" class="img-fluid" style="border-radius:100px">
+                        <h4 class="card-title">Customer 2</h4>
+                        <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis iusto cum deleniti, 
+                            officiis.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="card shadow-lg mb-2">
+                        <div class="card-body text-center">
+                        <img src="images/client1.jpg" alt="customer3" class="img-fluid" style="border-radius:100px">
+                        <h4 class="card-title">Customer 3</h4>
+                        <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis iusto cum deleniti, 
+                            officiis.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="card shadow-lg mb-2">
+                        <div class="card-body text-center">
+                        <img src="images/client2.jpg" alt="customer4" class="img-fluid" style="border-radius:100px">
+                        <h4 class="card-title">Customer 4</h4>
+                        <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis iusto cum deleniti, 
+                            officiis.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            </div>
+        </div>
+
+    <!-- End customer review -->
+
+    <!-- contact form -->
+    <div class="container-fluid" id="contact">
+       
+        <div class="row ml-5 pt-5">
+            <div class="col-md-8">
+            <h2 class="text-center">Contact US</h2>
+                <h6 class="text-center">Have an enquiry? Fill in the form below and we will get back to you as soon as possible.</h5>
+               <?php include_once('contact.php') ?>
+            </div>
+            <!-- form section end  -->
+            <div class="col-md-4 mt-5">
+            <div class="row">
+                <div class="col-sm-6 offset-sm-3">
+                   <h5>Our Address:</h5>
+                   <p>92 Plumstead Highstreet
+                   London<br>
+                   United Kingdom<br>
+                   SE18 1SL</p>
+                </div>
+            </div>
+                <div class="row">
+                <div class="col-sm-6 offset-sm-3">
+                <h5>Company Detail:</h5>
+                   <p> Registration no: 00071 <br>
+                   Telephone: 0000123<br>
+                   website : <a href="#" target="_blank"> www.customproject.com</a>
+                  </p>
+                </div></div>
+            </div>
+        </div>
+    </div>
+    <!-- end contact form -->
+    <!-- footer section -->
+   <?php require_once'footer.php';?>
 <!-- Javascript  -->
 
 <script src="js/jquery.min.js"></script>
